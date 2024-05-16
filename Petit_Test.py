@@ -45,9 +45,8 @@ for fi in range(0, len(files)):
 print("Stacking Completed .... \n")
 t_s = time.time()
 
-# s_no2=0
-l1 = 3
-l2 = 3
+l1 = 114
+l2 = 178
 
 # Use Parallel processing to speed up computation
 results = Parallel(n_jobs=3)(delayed(petit)(x, y) for x in range(l1) for y in range(l2))
